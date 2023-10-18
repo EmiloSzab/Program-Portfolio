@@ -10,3 +10,11 @@ if __name__ == "__main__":
         print(f'There will be {groups} groups with {left_students} student remaining')
     else:
         print(f'There will be {groups} groups with {left_students} students remaining')
+
+    sweets = int(input('How many sweets? '))
+    children = int(input('How many children are in class? '))
+
+    given_sweets = sweets//children
+    leftover = sweets%children
+
+    print (f'Each child will get {given_sweets} sweets and there will be {leftover} sweets leftover')
